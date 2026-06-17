@@ -1,0 +1,47 @@
+# =================================================================
+# TERRAFORM
+# =================================================================
+
+# Ignorar la carpeta de trabajo local (donde se descargan los providers)
+.terraform/
+
+# Ignorar archivos de estado (contienen secretos en texto plano)
+*.tfstate
+*.tfstate.*
+
+# Ignorar archivos de variables (donde sueles poner contraseñas)
+*.tfvars
+*.tfvars.json
+
+# Ignorar archivos de variables automáticas
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignorar archivos de log de errores
+crash.log
+
+# Ignorar archivos temporales de plan
+*.tfplan
+
+# Ignorar el archivo de lock (opcional, algunos prefieren subirlo, 
+# pero si quieres evitar "ruido", ignóralo)
+.terraform.lock.hcl
+
+# =================================================================
+# EJECUTABLES Y BINARIOS
+# =================================================================
+
+# Ejecutables de Windows
+*.exe
+*.dll
+
+# Ejecutables de Linux / macOS
+*.so
+*.dylib
+*.bin
+*.out
+
+# Comprimidos que a veces descargan los scripts
+*.zip
+*.tar.gz
+*.7z
